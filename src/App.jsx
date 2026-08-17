@@ -14,10 +14,10 @@ function App() {
     onAuthStateChanged(auth,async (user)=>{
       if(user){
         console.log("Logged in")
-        navigate('/')
+        navigate('/', { replace: true })
       }else{
         console.log("Logged out")
-        navigate('/login')
+        navigate('/login', { replace: true })
       }
     })
   },[])

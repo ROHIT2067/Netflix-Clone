@@ -49,7 +49,7 @@ function Player() {
             <img
                 src={back_arrow_icon}
                 alt=""
-                onClick={() => navigate(-2)}
+                onClick={() => navigate(-1)}
             />
 
             {apiData ? (
