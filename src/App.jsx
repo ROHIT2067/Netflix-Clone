@@ -14,7 +14,7 @@ function App() {
     onAuthStateChanged(auth,async (user)=>{
       if(user){
         console.log("Logged in")
-        navigate('/', { replace: true })
+        navigate('/', { replace: true })      //replaces the current page in the browser history instead of adding a new one
       }else{
         console.log("Logged out")
         navigate('/login', { replace: true })
